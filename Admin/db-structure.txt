@@ -1,0 +1,41 @@
+{
+    products: [
+        {
+            img: string => local directory path of server / remote link like google drive, s3 bucket.
+            title: string;
+            description: string;
+            sizes: [{
+                price: number
+                id: string / id => size (table) (relation field)
+            }]
+        }
+    ],
+    sizes: [
+        {
+            name: string;
+            description: string;
+        }
+    ]
+    crusts: [
+        {
+            img: string => local directory path of server / remote link like google drive, s3 bucket.
+            name: string;
+            nutritionValue: string;
+            description: string;
+            sizes: [string / id => size (table)];
+            addonPrice: null / number;
+        }
+    ],
+    users: [
+        {
+            img: string => local directory path of server / remote link like google drive, s3 bucket.
+            email: string;
+            firstName: string;
+            lastName: string;
+            phoneNumber: string;
+            password: string;
+            postCode: string;
+            role: enum => user | admin
+        }
+    ]
+}

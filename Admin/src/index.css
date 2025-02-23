@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #eeeeee;
+    --foreground: #212121;
+
+    --card: #ffffff;
+    --card-foreground: #424242;
+
+    --popover: #ffffff;
+
+    --primary: #009688;
+    --primary-dark: #00796b;
+    --primary-foreground: #fafafa;
+
+    --secondary: #f1f5f6;
+    --secondary-foreground: #01579b;
+
+    --muted: #bdbdbd;
+    --muted-foreground: #757575;
+
+    --accent: #b2dfdb;
+    --accent-foreground: #009688;
+    --border: #e0e0e0;
+    --link: #2196f3;
+
+    --error: #f44336;
+    --error-foreground: #ffffff;
+    --radius: 0.15rem;
+
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+
+  .dark {
+    --background: #1c1c1c;
+    --foreground: #f0f0f0;
+
+    --card: #424242;
+    --card-foreground: #ffffff;
+
+    --popover: #000000;
+
+    --accent: #808282;
+    --accent-foreground: #747777;
+
+    --border: #e0e0e0;
+    --link: #2196f3;
+
+    --primary: #009688;
+    --primary-foreground: #fafafa;
+
+    --secondary: #383838;
+
+    --muted: #474747;
+    --muted-foreground: #b0b0b0;
+
+    --border: #685e5e;
+    --radius: 0.25rem;
+  }
+}
+
+*,
+*:before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
+  color-scheme: light light;
+  letter-spacing: 0.0094rem;
+}
+
+.animate-fade {
+  animation: fade 0.2s ease-in-out;
+}
