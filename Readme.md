@@ -186,9 +186,13 @@ The server will run on http://localhost:5000.
 
 ##### Create a .env file in the Backend directory with the following variables:
 
+```
+
 DB_URL=<your-mongodb-connection-string>
 JWT_TOKEN=<your-jwt-secret>
 JWT_EXPIRE_IN=7d
+
+```
 
 ### **MongoDB Setup**
 
@@ -198,7 +202,11 @@ The project requires a **MongoDB** database. To set one up:
 2. **Create a new cluster and database** (e.g., `pizzahutDB`).
 3. **Obtain the connection string**, e.g.:
 
+```
+
 mongodb+srv://<username>:<password>@cluster0.r2yjf.mongodb.net/pizzahutDB?retryWrites=true&w=majority
+
+```
 
 4. **Replace** `<username>` and `<password>` with your **MongoDB credentials**.
 5. **Paste** the connection string into the `DB_URL` variable in your `.env` file
